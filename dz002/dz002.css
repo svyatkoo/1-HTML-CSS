@@ -47,7 +47,7 @@ body {
 .topic>img {
     height: 200px;
     width: 100%;
-    border-radius: 0 25px 0 0;
+    border-top-right-radius: 25px;
 }
 
 .topicText {
