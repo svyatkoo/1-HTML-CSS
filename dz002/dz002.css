@@ -1,0 +1,83 @@
+
+body {
+    margin: 0;
+}
+
+.father {
+    background: cornflowerblue;
+    padding: 35px 20px;
+    row-gap: 30px;
+
+}
+
+.card {
+    display: flex;
+    column-gap: 20px;
+}
+
+.photo {
+    max-width: 45%;
+    flex-shrink: 1;
+
+}
+
+.photo>img {
+    width: 100%;
+    border-radius: 25px;
+    position: center;
+}
+
+.textCard {
+    max-width: 55%;
+    flex-shrink: 2;
+}
+
+
+.topics {
+    display: flex;
+    border-top: 2px dashed white;
+    column-gap: 35px;
+    width: 100%;
+}
+
+.topic {
+    width: 33%;
+}
+
+.topic>img {
+    height: 200px;
+    width: 100%;
+    border-radius: 0 25px 0 0;
+}
+
+.topicText {
+    border-left: 2px solid black;
+    padding: 0 10px 10px 20px;
+    background:  rgba(0, 0, 0, 0.1);
+    border-bottom-right-radius: 15px;
+    min-height: 150px;
+    margin-top: 0;
+
+}
+
+p {
+    text-align: justify;
+}
+
+.topic>h2 {
+    margin-bottom: 5px;
+    border: 1px solid deeppink;
+    border-radius: 15px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: black;
+}
+
+.touch:hover {
+    color: gold;
+    background: rgba(138, 43, 226, 0.4);
+    font-size: 30px;
+    transition: 0.3s;
+}
