@@ -1,0 +1,56 @@
+.father {
+    background: cornflowerblue;
+    width: 1360px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.header {
+    background: darkorange;
+    height: 150px;
+}
+
+.container {
+    background: deeppink;
+    height: 500px;
+    display: flex;
+    column-gap: 10px;
+}
+
+.menu {
+    background: dodgerblue;
+    flex-grow: 1;
+}
+
+.posts {
+    background: azure;
+    flex-grow: 4;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.post1 {
+    background: chartreuse;
+    flex-grow: 1;
+}
+
+.post2 {
+    background: chartreuse;
+    flex-grow: 1;
+}
+
+.footer {
+    background: yellow;
+    height: 150px;
+}
+
+.boxDecor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid cyan;
+    border-radius: 25px;
+}

@@ -1,0 +1,78 @@
+.father {
+    background: black;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5em;
+    padding: 0.5em;
+}
+
+.header {
+    background: deepskyblue;
+    flex-grow: 1;
+}
+
+.contA {
+    background: black;
+    flex-grow: 7;
+    display: flex;
+    column-gap: 0.5em;
+}
+
+.left {
+    background: black;
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5em;
+
+}
+
+.hero {
+    background: deepskyblue;
+    flex-grow: 3;
+}
+
+.sidebar {
+    background: mediumspringgreen;
+    flex-grow: 5;
+}
+
+.right {
+    background: black;
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5em;
+}
+
+.main {
+    background: deepskyblue;
+    flex-grow: 4;
+}
+
+.extra {
+    background: pink;
+    flex-grow: 2;
+}
+.contB {
+    background: black;
+    flex-grow: 2;
+    display: flex;
+    column-gap: 0.5em;
+}
+
+.photo {
+    background: deepskyblue;
+    flex-grow: 3;
+}
+
+.post {
+    background: deepskyblue;
+    flex-grow: 1;
+}
+
+.footer {
+    background: orangered;
+    flex-grow: 1;
+}

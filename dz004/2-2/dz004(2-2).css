@@ -1,0 +1,40 @@
+.father {
+    background: black;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2%;
+    padding: 1%;
+}
+
+.widget {
+    background: cyan;
+    flex-grow: 2;
+}
+
+.widgets {
+    background: black;
+    display: flex;
+    flex-grow: 2;
+    column-gap: 1%;
+}
+
+.big {
+    background: red;
+    flex: 1 3 400px;
+}
+
+.bigger {
+    background: dodgerblue;
+    flex: 2 2 400px;
+}
+
+.huge {
+    background: red;
+    flex: 3 1 400px;
+}
+
+.contact {
+    background: cornflowerblue;
+    flex-grow: 3;
+}
