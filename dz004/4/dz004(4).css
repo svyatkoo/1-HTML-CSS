@@ -1,6 +1,6 @@
 .father {
     background: black;
-    height: 40em;
+    height: 120em;
     display: flex;
     flex-direction: column;
     row-gap: 0.5em;
@@ -23,15 +23,27 @@
     background: cornflowerblue;
     flex-grow: 3;
     display: flex;
+    flex-direction: column;
+    /*row-gap: 0.5em;*/
     row-gap: 0.5em;
-    column-gap: 0.5em;
-    flex-wrap: wrap;
     justify-content: space-between;
+    padding: 0.5em;
+}
+
+.upBox {
+    background: cornflowerblue;
+    flex-grow: 3;
+    display: flex;
+    column-gap: 0.5em;
+    justify-content: space-between;
+    /*padding: 0.5em;*/
 }
 
 .b {
     background: gold;
-    flex-basis: 360px;
+    /*flex-basis: 50em;*/
+    /*height: 100px;*/
+    flex-grow: 1;
 }
 
 .aside {

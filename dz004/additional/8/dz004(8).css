@@ -1,0 +1,142 @@
+.father {
+    background: black;
+    display: flex;
+    flex-basis: 60em;
+    flex-direction: column;
+    row-gap: 0.5em;
+}
+
+.header {
+    background: deepskyblue;
+    height: 10em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxHeader {
+    background-color: yellow;
+    width: 25%;
+}
+.cont {
+    background: blue;
+    display: flex;
+    /*height: 150em;*/
+    column-gap: 0.5em;
+}
+
+.slider {
+    background: orangered;
+    flex-basis: 30em;
+}
+
+.content {
+    background: black;
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5em;
+}
+
+.block3 {
+    background: deepskyblue;
+    /*flex-grow: 2;*/
+    display: flex;
+    column-gap: 0.5em;
+    padding: 1em;
+}
+
+.block4 {
+    background: deepskyblue;
+    /*flex-grow: 1;*/
+    display: flex;
+    column-gap: 0.5em;
+    padding: 1em;
+}
+
+.block56 {
+    background: red;
+    display: flex;
+    column-gap: 1em;
+    padding: 1em;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.block5 {
+    background: deepskyblue;
+    flex-grow: 4;
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 1em;
+    row-gap: 1em;
+    flex-wrap: wrap;
+}
+
+.block6 {
+    background: deepskyblue;
+    min-width: 25%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+}
+
+.block6A {
+    background: blue;
+    /*flex-basis: 25%;*/
+    /*height: 20em;*/
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+}
+
+.block6B {
+    background: yellow;
+    /*flex-basis: 100%;*/
+    height: 20em;
+}
+
+.block7 {
+    background: deepskyblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1em;
+    padding: 1em;
+}
+
+.box7A {
+    background: cornflowerblue;
+    width: 100%;
+    height: 20em;
+}
+
+.box7B {
+    background: cornflowerblue;
+    width: 48%;
+    height: 20em;
+}
+
+.box {
+    background: cornflowerblue;
+    flex-basis: 100%;
+    height: 20em;
+}
+
+.box2 {
+    background: cornflowerblue;
+    width: 48%;
+    height: 20em;
+}
+
+.box6A {
+    background: cornflowerblue;
+    /*flex-basis: 100%;*/
+    height: 20em;
+}
+
+/*@media screen and (min-width: 600px)  {*/
+/*    .slider {*/
+/*        */
+/*    }*/
+/*}*/
