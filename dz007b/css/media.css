@@ -1,0 +1,108 @@
+@media screen and (max-width: 320px){
+    footer {
+        max-width: 320px;
+        padding: 20px 14px;
+    }
+
+    .footer__top-logo img {
+        max-width: 50px;
+        /*max-height: 40px;*/
+    }
+
+    .footer__top-menu {
+        display: none;
+    }
+
+
+
+
+    .btn {
+        padding: 14px 44px;
+        box-sizing: border-box;
+    }
+
+    .footer__main-box {
+        display: flex;
+        margin-top: 250px;
+    }
+
+    .footer__main {
+        margin: 0;
+    }
+
+    .footer__main h2 {
+        font-size: 30px;
+        line-height: 34px;
+    }
+
+    .footer__main h1 {
+        font-size: 40px;
+        line-height: 46px;
+    }
+
+    .footer__main p {
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 30;
+    }
+
+    .footer__main p::before, .footer__main p::after {
+        display: none;
+    }
+
+
+
+
+
+
+    .footer__bottom-box {
+        position: relative;
+        /*width: 100%;*/
+    }
+
+    .footer__bottom {
+        /*display: flex;*/
+        flex-direction: column;
+        row-gap: 20px;
+        /*position: absolute;*/
+        /*top: 170px;*/
+        /*width: 100%;*/
+    }
+
+    .footer__bottom-item {
+        width: 290px;
+        height: 276px;
+        border: 2px solid black;
+        box-sizing: border-box;
+    /*    height: 328px;*/
+        padding: 10px;
+    /*    box-sizing: border-box;*/
+    /*    display: flex;*/
+    /*    flex-direction: column;*/
+    /*    justify-content: center;*/
+    /*    align-items: center;*/
+    /*    font-family: 'Tinos', serif;*/
+    /*    font-style: normal;*/
+    /*    font-weight: normal;*/
+        font-size: 22px;
+        line-height: 25px;
+    /*    background: #FFFFFF;*/
+    /*    flex-grow: 1;*/
+    }
+
+    /*.footer__bottom-item h5 {*/
+    /*    color: #2C2C2C;*/
+    /*}*/
+
+    /*.footer__bottom-item p {*/
+    /*    text-align: center;*/
+    /*    color: #656363;*/
+    /*    margin-top: 20px;*/
+
+    /*}*/
+
+    /*.footer__bottom-item span {*/
+    /*    color: #BC9060;*/
+    /*}*/
+
+}
