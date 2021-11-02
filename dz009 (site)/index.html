@@ -1,0 +1,955 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>AVT-ZAP</title>
+
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&family=Tinos:wght@400;700&display=swap"
+          rel="stylesheet">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet">
+    <link href="site.css" rel="stylesheet">
+    <link href="css/media768.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!--header-->
+<div class="header">
+    <div class="nav p-lr f-row fz-m fw500">
+        <div class="nav-left f-row">
+            <div class="nav-left-location">
+                <a href="#location" class="c-white">
+                    <div class="nav-left-location-box f-row">
+                        <div class="nav-left-location-logo"><img alt="logo" src="images/location-logo.png"></div>
+                        <div class="location-city">Ваш город: <span>Москва</span></div>
+                    </div>
+                </a>
+
+                <div class="location-choose-window window-box" id="location">
+                    <div class="location-choose-window-top f-row">
+                        <h4>Выберите свой город</h4>
+                        <div><a href="#"><img alt="close" src="images/close.png"></a></div>
+                    </div>
+                    <div class="location-choose-window-search">
+                        <form class="d-flex fz-m fw500">
+                            <input aria-label="Search" list="city-pool" placeholder="Ваш город" type="search">
+                        </form>
+                        <datalist id="city-pool">
+                            <option class="fw500">Москва</option>
+                            <option class="fw500">Санкт-Петербург</option>
+                            <option class="fw500">Краснодар</option>
+                            <option class="fw500">Екатеринбург</option>
+                            <option class="fw500">Ростов-на-Дону</option>
+                            <option class="fw500">Самара</option>
+                        </datalist>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-left-dropdown f-row">
+                <li class="nav-item dropdown">
+                    <a aria-expanded="false" class="nav-link dropdown-toggle c-white" data-bs-toggle="dropdown" href="#"
+                       role="button">Информация</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a aria-expanded="false" class="nav-link dropdown-toggle c-white" data-bs-toggle="dropdown" href="#"
+                       role="button">Сотрудничество</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                </li>
+            </div>
+        </div>
+
+        <div class="nav-right b-box">
+            <li class="nav-item dropdown pc-hide m-show">
+                <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                   role="button">Еще</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Оплата</a></li>
+                    <li><a href="#">Гарантия</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Журнал</a></li>
+                    <li><a href="#">О магазине</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </li>
+
+
+            <ul class="f-row m-hide">
+                <li><a href="#" class="c-white">Доставка</a></li>
+                <li><a href="#" class="c-white">Оплата</a></li>
+                <li><a href="#" class="c-white">Гарантия</a></li>
+                <li><a href="#" class="c-white">Новости</a></li>
+                <li><a href="#" class="c-white">Журнал</a></li>
+                <li><a href="#" class="c-white">О магазине</a></li>
+                <li><a href="#" class="c-white">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="header__bottom p-lr">
+
+        <div class="header__bottom-top f-row">
+
+            <div class="header__bottom-top-left f-row">
+                <div class="header__bottom-top-logo f-row">
+                    <img alt="logo" class="header__bottom-top-logo-photo" src="images/logo.png">
+                    <div class="header__bottom-top-logo-text b-box">
+                        <h2 class="m-hide">AVT-ZAP</h2>
+                        <div class="pc-hide m-show"><img alt="avt" class="main-logo-text-top" src="images/AVT-ZAP.png">
+                        </div>
+                        <p class="m-hide fw500">Интернет-магазин запчастей для АКПП</p>
+                        <div class="pc-hide m-show"><img alt="akpp" class="main-logo-text-bottom" src="images/АКПП.png">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header__bottom-top-info">
+                    <div class="header__bottom-top-time f-row">
+                        <img alt="clock" src="images/time.png">
+                        <div class="header__bottom-top-time-text fw500">
+                            <p class="b-box">Мы работаем: будни - 9:00-21:00</p>
+                            <p class="b-box">сб. - 10:00-15:00</p>
+                        </div>
+                    </div>
+
+                    <div class="header__bottom-top-location f-row">
+                        <img alt="location photo" src="images/location.png">
+                        <p class="b-box fz-m fw500">Невский пр-т, д. 45</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header__bottom-top-form f-row">
+                <div class="header__bottom-top-messenger f-row b-box">
+                    <img alt="/whatsapp ico" src="images/whatsapp.png">
+                    <p class="b-box">Напишите нам в WhatsApp</p>
+                </div>
+
+                <div class="header__bottom-top-col_form">
+                    <p class="b-box fw500">+7 383 291 92 86</p>
+                    <div><a href="#contact-form" class="fw500">форма обратной связи</a></div>
+
+                    <div class="call_order-box" id="contact-form">
+                        <div class="call_order-window window-box b-box">
+                            <div class="call_order f-row">
+                                <h4>Заказать звонок</h4>
+                                <div><a href="#"><img alt="close" src="images/close.png"></a></div>
+                            </div>
+
+                            <form action="#">
+                                <div class="call_order-field">
+                                    <div class="call_order-field-title fz-m">Ваше имя</div>
+                                    <input aria-label="name" type="text">
+                                </div>
+
+                                <div class="call_order-field">
+                                    <div class="call_order-field-title fw500">Номер телефона</div>
+                                    <div class="phone_box f-row">
+                                        <div class="phone_box-line"></div>
+                                        <div>+7</div>
+                                        <input aria-label="phone" placeholder="(999) 999-99-99" type="tel">
+                                    </div>
+                                </div>
+
+                                <div class="call_order-btn">Заказать звонок</div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="header__bottom-down f-row b-box">
+
+            <div class="header__bottom-down-left f-row">
+                <div class="header__btn-mobile f-row b-box">
+                    <div class="header__btn-mobile_fon f-row">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <span class="m-hide">Каталог</span>
+                </div>
+
+                <div class="header__bottom-down-search">
+                    <form class="d-flex">
+                        <input aria-label="Search" class="b-box fw500" list="products"
+                               placeholder="Поиск по наименованию или артикулу" type="search">
+                        <button class="b-box c-white fw500" type="submit">Найти</button>
+                    </form>
+                    <datalist id="products">
+                        <option>Найденные трансмиссии:</option>
+                        <option>6eT40</option>
+                        <option>6eT40</option>
+                        <option>6eT40</option>
+                        <option>Найденные товары:</option>
+                        <option>Насос - Артикул / 43233</option>
+                        <option>Соленоид - Артикул / 4493934-22</option>
+                    </datalist>
+                </div>
+            </div>
+
+
+            <div class="header__bottom-down-cabinet f-row">
+                <div class="header__bottom-down-cabinet-item f-row">
+                    <div><img alt="user" src="images/user.png"></div>
+                    <div><a href="#" class="fz-m fw500">Войти</a></div>
+                </div>
+                <div class="cabinet-item-line pc-hide m-show"></div>
+                <div class="header__bottom-down-cabinet-item f-row">
+                    <div><img alt="user" src="images/heart.png"></div>
+                    <div><a href="#" class="fz-m fw500"><span>Избранное</span></a></div>
+                </div>
+                <div class="cabinet-item-line pc-hide m-show"></div>
+                <div class="header__bottom-down-cabinet-item f-row">
+                    <div><img alt="user" src="images/cart.png"></div>
+                    <div><a href="#" class="fz-m fw500"><p class="cabinet-item_color">В корзине нет товаров</p></a></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!--main-->
+<div class="main-content">
+
+    <!--main-content-->
+    <div class="main__top p-lr f-row">
+        <div class="main__top-slider ">
+            <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleCaptions">
+                <div class="carousel-indicators">
+                    <button aria-current="true" aria-label="Slide 1" class="active car-btn"
+                            data-bs-slide-to="0" data-bs-target="#carouselExampleCaptions" type="button"></button>
+                    <button aria-label="Slide 2" class="car-btn" data-bs-slide-to="1"
+                            data-bs-target="#carouselExampleCaptions"
+                            type="button"></button>
+                    <button aria-label="Slide 3" class="car-btn" data-bs-slide-to="2"
+                            data-bs-target="#carouselExampleCaptions"
+                            type="button"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img alt="..." class="d-block" src="images/main_slider.png">
+                    </div>
+                    <div class="carousel-item">
+                        <img alt="..." class="d-block" src="images/main_slider.png">
+                    </div>
+                    <div class="carousel-item">
+                        <img alt="..." class="d-block" src="images/main_slider.png">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleCaptions"
+                        type="button">
+                    <span aria-hidden="true"><img alt="" src="images/btn_left.png"></span>
+                </button>
+                <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleCaptions"
+                        type="button">
+                    <span aria-hidden="true"><img alt="next" src="images/btn_right.png"></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="main__top-container f-row">
+            <div class="main__top-container-item b-box">
+                <h5 class="fz-m fw500">Акция</h5>
+
+                <div class="item-content f-row">
+                    <div><img alt="photo1" src="images/slider-item-photo1.png"></div>
+                    <div class="item-content-text">
+                        <p class="item-content-name fw500">Обгонная муфта гидротрансформатор</p>
+                        <p class="item-content-model">BW-SP-2 SONNAX</p></div>
+                </div>
+
+                <div class="price f-row justify-content-end">
+                    <div class="price-box">
+                        <p class="price-new">4 430₽</p>
+                        <p class="price-before">5 430₽</p>
+                    </div>
+                    <a href="#buyAlert">
+                        <div class="buy-btn b-box">
+                            <img alt="buy" src="images/buy-btn.png">
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="main__top-container-item b-box">
+                <h5 class="fz-m fw500">Акция</h5>
+
+                <div class="item-content f-row">
+                    <div><img alt="photo2" src="images/slider-item-photo2.png"></div>
+                    <div class="item-content-text">
+                        <p class="item-content-name fw500">Комплект фрикционных дисков</p>
+                        <p class="item-content-model">BW-SP-2 SONNAX</p></div>
+                </div>
+
+                <div class="price f-row justify-content-end">
+                    <div class="price-box">
+                        <p class="price-new">4 430₽</p>
+                        <p class="price-before">5 430₽</p>
+                    </div>
+                    <div class="buy-btn b-box">
+                        <a href="#buyAlert"><img alt="buy" src="images/buy-btn.png"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="buyAlert__window window-box f-row b-box" id="buyAlert">
+            <div class="buyAlert__window-main f-row">
+                <div class="buyAlert__window-main-box f-row">
+                    <div><img alt="buyAlertPhoto" src="images/buyAlertPhoto.png"></div>
+                    <div class="buyAlert__window-main-text">
+                        <h4>Товар добавлен в корзину</h4>
+                        <p>Intermediate accumelator sleeve</p>
+                    </div>
+                </div>
+                <div class="my_button"><a href="#"><img alt="close" src="images/close.png"></a></div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+    <!--main__advert-->
+    <div class="main__advert p-lr">
+        <div class="main__advert-box">
+            <div class="main__advert-btn-left"><img alt="left" src="images/btn_left.png"></div>
+
+            <div class="main__advert-container f-row">
+                <div class="main__advert-container-item">
+                    <div class="main__advert-container-item-box b-box fw100">
+                        <h3 class="fw500">Масла</h3>
+                        <p class="fw500">Трансмиссионное масло; присалка в масло акпп</p>
+                        <div>
+                            <a href="#">
+                                <div class="go_to-btn fz-m fw500 c-white">Перейти</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div><img alt="advert" src="images/adv-photo1.png"></div>
+                </div>
+
+                <div class="main__advert-container-item">
+                    <div class="main__advert-container-item-box b-box">
+                        <h3 class="fw500">Фильтры</h3>
+                        <p class="fw500">Масляный фильтр; фильтр воздушный</p>
+                        <div><a href="#">
+                            <div class="go_to-btn fz-m fw500 c-white">Перейти</div>
+                        </a></div>
+                    </div>
+                    <div><img alt="advert" src="images/adv-photo2.png"></div>
+                </div>
+
+                <div class="main__advert-container-item">
+                    <div class="main__advert-container-item-box b-box">
+                        <h3 class="fw500">Радиаторы</h3>
+                        <p class="fw500">Дополнительные радиаторы</p>
+                        <div><a href="#">
+                            <div class="go_to-btn fz-m fw500 c-white">Перейти</div>
+                        </a></div>
+                    </div>
+                    <div><img alt="advert" src="images/adv-photo3.png"></div>
+                </div>
+            </div>
+
+            <div class="main__advert-btn-right"><img alt="right" src="images/btn_right.png"></div>
+        </div>
+    </div>
+
+
+    <!--main__menu-line-->
+    <div class="main__menu-line p-lr">
+        <div>
+            <a href="#">
+                <div class="main__menu-btn b-box fw500">Подборки товаров</div>
+            </a>
+        </div>
+
+        <div>
+            <a href="#">
+                <div class="main__menu-btn b-box fw500">Акции</div>
+            </a>
+        </div>
+
+        <div>
+            <a href="#">
+                <div class="main__menu-btn b-box fw500">Сейчас покупают</div>
+            </a>
+        </div>
+
+
+        <div class="main__menu-line-ico b-box">
+            <div class="line-ico-item-box">
+                <div class="line-ico-item">
+                    <div><img alt="home" src="images/line-menu-ico1.png"></div>
+                    <h5>Главная</h5>
+                </div>
+                <!--                <span class="badge bg-primary rounded-pill ico-counter">14</span>-->
+            </div>
+            <div class="line-ico-item-box">
+                <div class="line-ico-item">
+                    <div><img alt="home" src="images/line-menu-ico2.png"></div>
+                    <h5>Избранное</h5>
+                </div>
+                <span class="badge bg-primary rounded-pill ico-counter">3</span>
+            </div>
+            <div class="line-ico-item-box">
+                <div class="line-ico-item">
+                    <div><img alt="home" src="images/line-menu-ico3.png"></div>
+                    <h5>Корзина</h5>
+                </div>
+                <span class="badge bg-primary rounded-pill ico-counter">2</span>
+            </div>
+            <div class="line-ico-item-box">
+                <div class="line-ico-item">
+                    <div><img alt="home" src="images/line-menu-ico4.png"></div>
+                    <h5>Профиль</h5>
+                </div>
+                <!--                <span class="badge bg-primary rounded-pill ico-counter">14</span>-->
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--main__bottom-->
+    <div class="main__bottom p-lr">
+        <div class="main__bottom-shop-pool">
+            <div class="shop-pool-top f-row">
+                <div class="product-item">
+                    <div class="product-item-top b-box">
+                        <div><img alt="product" src="images/prod1.png"></div>
+                        <div class="product-item-discount b-box fw500 c-white pc-hide">-40%</div>
+                    </div>
+
+                    <div class="product-item-reviews">
+                        <div><img alt="star" src="images/Star.png"></div>
+                        <p class="product-item-reviews-stars fz-m fw500">4.5</p>
+                        <p class="product-item-reviews-counter fz-m">10 отзывов</p>
+                    </div>
+
+                    <p class="product-item-name fw500">Intermediate accumelator sleeve</p>
+
+                    <div class="product-item-price">
+                        <p class="product-item-price_decor">ЦЕНА</p>
+                        <div><a href="#">по запросу</a></div>
+                    </div>
+
+                    <div class="product-item-bottom f-row">
+                        <div>
+                            <a href="#buyAlert">
+                                <div class="product-item-btn b-box">
+                                    <div><img alt="prod ico" src="images/prod-ico-btn.png"></div>
+                                    <p>В корзину</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div><a href="#"><img alt="like" src="images/like.png"></a></div>
+
+                        <div><a href="#"><img alt="like" src="images/diagram.png"></a></div>
+                    </div>
+                </div>
+
+
+                <div class="product-item">
+                    <div class="product-item-top b-box">
+                        <div><img alt="product" src="images/prod2.png"></div>
+                        <div class="product-item-discount b-box fw500 c-white">-40%</div>
+                    </div>
+
+                    <div class="product-item-reviews">
+                        <div><img alt="star" src="images/Star.png"></div>
+                        <p class="product-item-reviews-stars fz-m fw500">4.5</p>
+                        <p class="product-item-reviews-counter fz-m">10 отзывов</p>
+                    </div>
+
+                    <p class="product-item-name fw500">Комплект фрикционных дисков</p>
+
+                    <div class="product-item-price c-gap8">
+                        <!--                        <p>ЦЕНА</p>-->
+                        <!--                        <div><a href="#">по запросу</a></div>-->
+                        <p class="price-new">4 430₽</p>
+                        <p class="price-before">5 430₽</p>
+
+                    </div>
+
+                    <div class="product-item-bottom f-row">
+                        <div>
+                            <a href="#buyAlert">
+                                <div class="product-item-btn b-box">
+                                    <div><img alt="prod ico" src="images/prod-ico-btn.png"></div>
+                                    <p>В корзину</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div><a href="#"><img alt="like" src="images/like.png"></a></div>
+
+                        <div><a href="#"><img alt="like" src="images/diagram.png"></a></div>
+                    </div>
+                </div>
+
+
+                <div class="product-item">
+                    <div class="product-item-top b-box">
+                        <div><img alt="product" src="images/prod1.png"></div>
+                        <div class="product-item-discount b-box fw500 c-white pc-hide">-40%</div>
+                    </div>
+
+                    <div class="product-item-reviews">
+                        <div><img alt="star" src="images/Star.png"></div>
+                        <p class="product-item-reviews-star fz-m fw500s">4.5</p>
+                        <p class="product-item-reviews-counter fz-m">10 отзывов</p>
+                    </div>
+
+                    <p class="product-item-name fw500 max-w">Intermediate accumelator sleeve</p>
+
+                    <div class="product-item-price">
+                        <p class="product-item-price_decor">ЦЕНА</p>
+                        <div><a href="#">по запросу</a></div>
+                    </div>
+
+                    <div class="product-item-bottom f-row">
+                        <div>
+                            <a href="#buyAlert">
+                                <div class="product-item-btn b-box">
+                                    <div><img alt="prod ico" src="images/prod-ico-btn.png"></div>
+                                    <p>В корзину</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div><a href="#"><img alt="like" src="images/like.png"></a></div>
+
+                        <div><a href="#"><img alt="like" src="images/diagram.png"></a></div>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-item-top b-box">
+                        <div><img alt="product" src="images/prod3.png"></div>
+                        <div class="product-item-discount b-box fw500 c-white pc-hide">-40%</div>
+                    </div>
+
+                    <div class="product-item-reviews">
+                        <div><img alt="star" src="images/Star.png"></div>
+                        <p class="product-item-reviews-stars fz-m fw500">4.5</p>
+                        <p class="product-item-reviews-counter fz-m">10 отзывов</p>
+                    </div>
+
+                    <p class="product-item-name fw500 max-w">Intermediate accumelator sleeve</p>
+
+                    <div class="product-item-price">
+                        <p class="product-item-price_decor">ЦЕНА</p>
+                        <div><a href="#">по запросу</a></div>
+                    </div>
+
+                    <div class="product-item-bottom f-row">
+                        <div>
+                            <a href="#buyAlert">
+                                <div class="product-item-btn b-box">
+                                    <div><img alt="prod ico" src="images/prod-ico-btn.png"></div>
+                                    <p>В корзину</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div><a href="#"><img alt="like" src="images/like.png"></a></div>
+
+                        <div><a href="#"><img alt="like" src="images/diagram.png"></a></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="main__bottom-line"></div>
+
+
+            <div class="shop-pool-top f-row">
+                <div class="product-item">
+                    <div class="product-item-top b-box">
+                        <div><img alt="product" src="images/prod1.png"></div>
+                        <div class="product-item-discount b-box fw500 c-white pc-hide">-40%</div>
+                    </div>
+
+                    <div class="product-item-reviews">
+                        <div><img alt="star" src="images/Star.png"></div>
+                        <p class="product-item-reviews-stars fz-m fw500">4.5</p>
+                        <p class="product-item-reviews-counter fz-m">10 отзывов</p>
+                    </div>
+
+                    <p class="product-item-name fw500">Intermediate accumelator sleeve</p>
+
+                    <div class="product-item-price">
+                        <p class="product-item-price_decor">ЦЕНА</p>
+                        <div><a href="#">по запросу</a></div>
+                    </div>
+
+                    <div class="product-item-bottom f-row">
+                        <div>
+                            <a href="#buyAlert">
+                                <div class="product-item-btn b-box">
+                                    <div><img alt="prod ico" src="images/prod-ico-btn.png"></div>
+                                    <p>В корзину</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div><a href="#"><img alt="like" src="images/like.png"></a></div>
+
+                        <div><a href="#"><img alt="like" src="images/diagram.png"></a></div>
+                    </div>
+                </div>
+
+
+                <div class="product-item">
+                    <div class="product-item-top b-box">
+                        <div><img alt="product" src="images/prod2.png"></div>
+                        <div class="product-item-discount b-box fw500 c-white">-40%</div>
+                    </div>
+
+                    <div class="product-item-reviews">
+                        <div><img alt="star" src="images/Star.png"></div>
+                        <p class="product-item-reviews-stars fz-m fw500">4.5</p>
+                        <p class="product-item-reviews-counter fz-m">10 отзывов</p>
+                    </div>
+
+                    <p class="product-item-name fw500">Комплект фрикционных дисков</p>
+
+                    <div class="product-item-price c-gap8">
+                        <!--                        <p>ЦЕНА</p>-->
+                        <!--                        <div><a href="#">по запросу</a></div>-->
+                        <p class="price-new">4 430₽</p>
+                        <p class="price-before">5 430₽</p>
+
+                    </div>
+
+                    <div class="product-item-bottom f-row">
+                        <div>
+                            <a href="#buyAlert">
+                                <div class="product-item-btn b-box">
+                                    <div><img alt="prod ico" src="images/prod-ico-btn.png"></div>
+                                    <p>В корзину</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div><a href="#"><img alt="like" src="images/like.png"></a></div>
+
+                        <div><a href="#"><img alt="like" src="images/diagram.png"></a></div>
+                    </div>
+                </div>
+
+
+                <div class="product-item">
+                    <div class="product-item-top b-box">
+                        <div><img alt="product" src="images/prod1.png"></div>
+                        <div class="product-item-discount b-box fw500 c-white pc-hide">-40%</div>
+                    </div>
+
+                    <div class="product-item-reviews">
+                        <div><img alt="star" src="images/Star.png"></div>
+                        <p class="product-item-reviews-star fz-m fw500s">4.5</p>
+                        <p class="product-item-reviews-counter fz-m">10 отзывов</p>
+                    </div>
+
+                    <p class="product-item-name fw500 max-w">Intermediate accumelator sleeve</p>
+
+                    <div class="product-item-price">
+                        <p class="product-item-price_decor">ЦЕНА</p>
+                        <div><a href="#">по запросу</a></div>
+                    </div>
+
+                    <div class="product-item-bottom f-row">
+                        <div>
+                            <a href="#buyAlert">
+                                <div class="product-item-btn b-box">
+                                    <div><img alt="prod ico" src="images/prod-ico-btn.png"></div>
+                                    <p>В корзину</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div><a href="#"><img alt="like" src="images/like.png"></a></div>
+
+                        <div><a href="#"><img alt="like" src="images/diagram.png"></a></div>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-item-top b-box">
+                        <div><img alt="product" src="images/prod3.png"></div>
+                        <div class="product-item-discount b-box fw500 c-white pc-hide">-40%</div>
+                    </div>
+
+                    <div class="product-item-reviews">
+                        <div><img alt="star" src="images/Star.png"></div>
+                        <p class="product-item-reviews-stars fz-m fw500">4.5</p>
+                        <p class="product-item-reviews-counter fz-m">10 отзывов</p>
+                    </div>
+
+                    <p class="product-item-name fw500 max-w">Intermediate accumelator sleeve</p>
+
+                    <div class="product-item-price">
+                        <p class="product-item-price_decor">ЦЕНА</p>
+                        <div><a href="#">по запросу</a></div>
+                    </div>
+
+                    <div class="product-item-bottom f-row">
+                        <div>
+                            <a href="#buyAlert">
+                                <div class="product-item-btn b-box">
+                                    <div><img alt="prod ico" src="images/prod-ico-btn.png"></div>
+                                    <p>В корзину</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div><a href="#"><img alt="like" src="images/like.png"></a></div>
+
+                        <div><a href="#"><img alt="like" src="images/diagram.png"></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main__bottom-btn">
+            <a href="#">
+                <div class="show_more-btn b-box">Показать еще</div>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<!--news-->
+<div class="news">
+    <div class="news__header p-lr">
+        <h3>НОВОСТИ</h3>
+    </div>
+
+    <div class="news-line-box">
+        <div class="news-line"></div>
+    </div>
+
+    <div class="news__footer p-lr">
+        <div class="news-article-pool">
+            <div class="news-article-pool-item">
+                <div class="article-pool-item-date-box">
+                    <div class="date-box-circle"></div>
+                    <div class="date-box-vertical_line"></div>
+                    <div class="date-box-text b-box">3 ноября</div>
+                </div>
+
+                <h4><a href="#">Изменения на сайте</a></h4>
+
+                <p>Недавно на сайте мы ввели
+                    очередную порцию изменений,
+                    которые, как нам кажется, должны
+                    улучшить функциональность сайта
+                    и сделать его более удобным для
+                    пользователей. Реакция посетителей
+                    не заставила себя долго ждать...
+                </p>
+
+            </div>
+
+            <div class="news-article-pool-item">
+                <div class="article-pool-item-date-box">
+                    <div class="date-box-circle"></div>
+                    <div class="date-box-vertical_line"></div>
+                    <div class="date-box-text b-box">2 ноября</div>
+                </div>
+
+                <h4><a href="#">Вышла новая версия для мобильных приложений</a></h4>
+
+                <p>
+                    Что нового в 2.0:
+                    <div>— добавлена история поиска;</div>
+                    <div>— добавлена синхронизация с сервером;</div>
+                    <div>— испрвление ошибок.</div>
+                </p>
+
+            </div>
+
+            <div class="news-article-pool-item">
+                <div class="article-pool-item-date-box">
+                    <div class="date-box-circle"></div>
+                    <div class="date-box-vertical_line"></div>
+                    <div class="date-box-text b-box">1 ноября</div>
+                </div>
+
+                <h4><a href="#">Очередная порция обновлений для
+                    мобильных приложений</a></h4>
+
+                <p>
+                    Что нового добавлено:
+                    <div>— поддержка пуш-уведомлений;</div>
+                    <div>— разделы для покупателей;</div>
+                    <div>— просмотр покупателя в заказах;</div>
+                    <div>— возможность поиска;</div>
+                    <div>— исправление ошибок.</div>
+                </p>
+
+            </div>
+
+            <div class="news-article-pool-item">
+                <div class="article-pool-item-date-box">
+                    <div class="date-box-circle"></div>
+                    <div class="date-box-vertical_line"></div>
+                    <div class="date-box-text b-box">31 октября</div>
+                </div>
+
+                <h4><a href="#">Интерфейс заказов для покупателей
+                    стал более функциональным</a></h4>
+
+                <p>
+                    Он позволяет выводить все
+                    формируемые системой
+                    уведомления(e-mail, смс, web) в
+                    едином окне с системой удобной
+                    фильтрации поиска.
+                </p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--footer-->
+<div class="footer p-lr">
+    <div class="footer__container">
+
+        <!--footer__container-left-->
+        <div class="footer__container-left">
+            <div class="footer__container-left-item">
+                <h4>КАТАЛОГ</h4>
+                <ul>
+                    <li><a href="#">Каталог запчастей</a></li>
+                    <li><a href="#">Масла</a></li>
+                    <li><a href="#">Фильтра</a></li>
+                    <li><a href="#">Радиаторы</a></li>
+                    <li><a href="#">Sonnax</a></li>
+                    <li><a href="#">Manual</a></li>
+                    <li><a href="#">Новинки</a></li>
+                    <li><a href="#">Акции</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__container-left-item">
+                <h4>РУБРИКАТОР</h4>
+                <ul>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Оплата</a></li>
+                    <li><a href="#">Гарантия</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Журнал</a></li>
+                    <li><a href="#">О магазине</a></li>
+                    <li><a href="#">Контактная информация</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__container-left-item">
+                <h4>ИНФОРМАЦИЯ</h4>
+                <ul>
+                    <li><a href="#">Пользовательское соглашение <br>
+                        об использовании персональных данных</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                    <li><a href="#">Соглашение на рассылку <br>
+                        рекламных материалов</a></li>
+                    <li><a href="#">Политика возвратов</a></li>
+                </ul>
+
+                <div class="pay_card">
+                    <p>Мы принимаем</p>
+                    <div class="b-box"><img alt="cards photo" src="images/pay_cards.png"></div>
+                </div>
+            </div>
+        </div>
+
+        <!--footer__container-right-->
+        <div class="footer__container-right">
+            <div class="footer__container-right-top">
+                <div class="contacts">
+                    <h4>КОНТАКТЫ</h4>
+                    <p>+7 383 291 92 86</p>
+                    <p>info@avt-zap.ru</p>
+                </div>
+                <div class="address">
+                    <h4>АДРЕС</h4>
+                    <p>г. Новосибирск,<br>
+                        ул. Планировочная, 5, офис 105</p>
+                </div>
+            </div>
+
+            <div class="footer__container-right-middle">
+                <p>Мы онлайн, воспользуйтесь</p>
+                <p class="c-white">Форма обратной связи</p>
+            </div>
+
+            <div class="footer__container-right-bottom">
+                <p>Подпишитесь на нашу расслыку и <br>
+                    вы первыми узнаете о скидках и акциях
+                </p>
+
+                <div class="input-group mb-3">
+                    <input aria-describedby="button-addon2" aria-label="Recipient's username" class="form-control"
+                           placeholder="Введите ваш email" type="text">
+                    <button class="btn btn-outline-secondary c-white" id="button-addon2" type="button">Подписаться
+                    </button>
+                </div>
+
+                <div class="footer__icons">
+                    <div><img alt="fb" src="images/footer-ico1.png"></div>
+                    <div><img alt="fb" src="images/footer-ico2.png"></div>
+                    <div><img alt="fb" src="images/footer-ico3.png"></div>
+                    <div><img alt="fb" src="images/footer-ico4.png"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p class="footer-rights">2017 © ООО «АВТ-ЗАП» - запчасти для акпп</p>
+</div>
+
+
+<script crossorigin="anonymous"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

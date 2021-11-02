@@ -1,0 +1,217 @@
+@media screen and (max-width: 768px) {
+    body {
+        width: 768px;
+    }
+
+    .p-lr {
+        padding: 0 22px;
+    }
+
+    .m-hide {
+        display: none;
+    }
+
+    .m-show {
+        display: block;
+    }
+
+    .nav {
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+    .dropdown-menu {
+        /*background: #0F2438;*/
+        background:  rgb(15, 36, 56, 0.9);
+    }
+
+    .dropdown-menu li {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        padding: 5px 20px;
+        box-sizing: border-box;
+    }
+
+    .dropdown-menu li:first-child {
+        margin-top: 20px;
+    }
+
+
+    /*.header__bottom {*/
+    /*    */
+    /*}*/
+
+    .header__bottom-top {
+        column-gap: 103px;
+        padding-top: 15px;
+        box-sizing: border-box;
+    }
+
+    .header__bottom-top-left {
+        column-gap: 28px;
+    }
+
+    .header__bottom-top-logo-photo {
+        width: 55px;
+        height: 60px;
+    }
+
+    .header__bottom-top-logo-text {
+        padding-left: 10px;
+        row-gap: 7px;
+    }
+
+    .main-logo-text-top, .main-logo-text-bottom {
+        display: block;
+    }
+
+    .main-logo-text-top {
+        width: 80px;
+        height: 14px;
+    }
+
+    .main-logo-text-bottom {
+        width: 135px;
+        height: 21px;
+    }
+
+    .header__bottom-top-info {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        row-gap: 15px;
+    }
+
+    .header__bottom-top-time img {
+        max-width: 20px;
+        max-height: 20px;
+    }
+
+    .header__bottom-top-time-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 196px;
+    }
+
+    .header__bottom-top-time-text p {
+        font-size: 12px;
+        line-height: 18px;
+        padding-left: 10px;
+    }
+
+    .header__bottom-top-location p {
+        font-size: 12px;
+        line-height: 14px;
+        padding-left: 10px;
+    }
+
+    .header__bottom-top-location img {
+        max-width: 20px;
+        max-height: 20px;
+    }
+
+    .header__bottom-top-form {
+        flex-direction: column-reverse;
+        row-gap: 12px;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .header__bottom-top-messenger {
+        min-width: 182px;
+        padding: 3px 5px;
+    }
+
+    .header__bottom-top-col_form p {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+
+
+    .header__bottom-down {
+        align-items: flex-start;
+    }
+
+    .header__bottom-down-left {
+        column-gap: 15px;
+    }
+
+    .header__btn-mobile {
+        max-width: 43px;
+        max-height: 43px;
+        padding: 15px 11px;
+    }
+
+
+    .header__bottom-down-search input {
+        width: 100%;
+        max-height: 43px;
+        padding: 14px;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+    .header__bottom-down-search button {
+        max-height: 43px;
+        padding: 13px 26px;
+        font-size: 13px;
+        line-height: 17px;
+        color: #FFFFFF;
+    }
+
+
+    .header__bottom-down-cabinet {
+        align-items: flex-start;
+    }
+
+    .header__bottom-down-cabinet-item {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        border: none;
+    }
+
+    .header__bottom-down-cabinet-item img{
+        height: 21px;
+    }
+
+    .header__bottom-down-cabinet-item a {
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+    .cabinet-item_color {
+        font-size: 10px !important;
+        line-height: 12px !important;
+    }
+
+    .header__bottom-down-cabinet-item p{
+        padding-top: 8px;
+        box-sizing: border-box;
+    }
+    .header__bottom-down-cabinet-item div:last-child {
+        width: 58px;
+    }
+    .cabinet-item-line {
+        width: 1px;
+        height: 28px;
+        background: #E1E5F8;
+        margin-top: 7px;
+    }
+
+
+
+
+
+
+    /*main-top*/
+
+
+
+
+}
