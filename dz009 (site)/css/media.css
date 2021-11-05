@@ -888,17 +888,21 @@
 
     /*__________main__menu-line-ico--popup-Window*/
     .main__menu-line-ico-container {
-        position: relative;
+        /*position: relative;*/
+        position: sticky;
+        bottom: 0;
+        z-index: 102;
     }
-
     .main__menu-line-ico {
         display: flex;
         background: #FFFFFF;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-        position: absolute;
-        top: -65px;
+        /*position: absolute;*/
+        /*top: -65px;*/
         width: 100%;
+
     }
+
 
     /*-------------main__bottom---------------*/
     .main__bottom {
@@ -1195,7 +1199,7 @@
 
     /*__________main__menu-line-ico--popup-Window*/
     .main__menu-line-ico-container {
-        position: relative;
+        /*position: relative;*/
     }
 
     .main__menu-line-ico {
